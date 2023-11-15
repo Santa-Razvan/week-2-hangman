@@ -1,0 +1,17 @@
+.characters {
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.character {
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+    min-width: 20px;
+    min-height: 20px;
+    text-align: center;
+}
+
+/* 46:31 */

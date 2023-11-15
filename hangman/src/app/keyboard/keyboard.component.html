@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="keys">
+        <button class="key btn btn-primary" *ngFor="let key of keys" (click)="onClickKey(key)" [disabled]="key.guessed">
+            {{ key.value }}
+        </button>
+    </div>
+</div>

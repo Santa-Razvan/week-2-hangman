@@ -1,0 +1,6 @@
+<div class="container">
+    <app-hangman [guesses]="guesses" [word]="word" (gameFinished)="onGameFinished()"></app-hangman>
+    <app-word [guesses]="guesses" [word]="word" *ngIf="!restartGame"></app-word>
+    <app-keyboard [word]="word" (keyPressed)="guessLetter($event)" *ngIf="!restartGame"></app-keyboard>
+    <button type="button" class="btn btn-success" (click)="reset()" *ngIf="restartGame">Restart Game</button>
+</div>
